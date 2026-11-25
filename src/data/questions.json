@@ -1,0 +1,147 @@
+[
+  {
+    "id": "q1",
+    "course": "Data Structures & Algorithms",
+    "subjectCode": "CS-301",
+    "question": "What is the worst-case time complexity of QuickSort when the pivot chosen is always the minimum or maximum element?",
+    "options": [
+      "O(n log n)",
+      "O(n)",
+      "O(n²)",
+      "O(log n)"
+    ],
+    "correctAnswer": 2,
+    "marks": 2,
+    "negativeMarks": 0.5,
+    "topic": "Sorting & Recursion",
+    "difficulty": "Medium",
+    "explanation": "If the selected pivot divides the array into subproblems of size 0 and n-1 at each partition step, the recurrence relation is T(n) = T(n-1) + O(n), yielding O(n²)."
+  },
+  {
+    "id": "q2",
+    "course": "Data Structures & Algorithms",
+    "subjectCode": "CS-301",
+    "question": "Which data structure is fundamentally required to implement Breadth-First Search (BFS) on a graph?",
+    "options": [
+      "LIFO Stack",
+      "FIFO Queue",
+      "Binary Search Tree",
+      "Priority Heap"
+    ],
+    "correctAnswer": 1,
+    "marks": 2,
+    "negativeMarks": 0.5,
+    "topic": "Graph Algorithms",
+    "difficulty": "Easy",
+    "explanation": "BFS explores vertices in order of their distance from the source vertex. A FIFO queue ensures vertices discovered first are expanded first."
+  },
+  {
+    "id": "q3",
+    "course": "Data Structures & Algorithms",
+    "subjectCode": "CS-301",
+    "question": "What is the balance factor allowed for any node in an AVL self-balancing binary search tree?",
+    "options": [
+      "Must strictly equal 0",
+      "Must be in {-1, 0, +1}",
+      "Must be in {-2, 0, +2}",
+      "Any integer less than the tree height"
+    ],
+    "correctAnswer": 1,
+    "marks": 2,
+    "negativeMarks": 0.5,
+    "topic": "Self-Balancing Trees",
+    "difficulty": "Medium",
+    "explanation": "An AVL tree requires that for every node, the height difference between its left and right subtrees (Balance Factor = Height(Left) - Height(Right)) is either -1, 0, or +1."
+  },
+  {
+    "id": "q4",
+    "course": "Operating Systems",
+    "subjectCode": "CS-402",
+    "question": "Which of the following is NOT one of Coffman's four necessary conditions for a deadlock to occur?",
+    "options": [
+      "Mutual Exclusion",
+      "Hold and Wait",
+      "Preemption Allowed",
+      "Circular Wait"
+    ],
+    "correctAnswer": 2,
+    "marks": 2,
+    "negativeMarks": 0.5,
+    "topic": "Deadlocks & Concurrency",
+    "difficulty": "Medium",
+    "explanation": "The condition is 'No Preemption'. If preemption is allowed, the operating system can reclaim resources, preventing deadlock."
+  },
+  {
+    "id": "q5",
+    "course": "Operating Systems",
+    "subjectCode": "CS-402",
+    "question": "What is Belady's Anomaly in memory management page replacement algorithms?",
+    "options": [
+      "Accessing out-of-bounds memory generates segmentation faults",
+      "Allocating more page frames results in more page faults in FIFO",
+      "Processes spend more time paging than executing instructions",
+      "The Translation Lookaside Buffer experiences 100% cache misses"
+    ],
+    "correctAnswer": 1,
+    "marks": 2,
+    "negativeMarks": 0.5,
+    "topic": "Virtual Memory",
+    "difficulty": "Easy",
+    "explanation": "Belady's anomaly occurs in FIFO page replacement where increasing the physical page frames leads to an unexpected increase in the number of page faults."
+  },
+  {
+    "id": "q6",
+    "course": "Operating Systems",
+    "subjectCode": "CS-402",
+    "question": "Which CPU scheduling algorithm is mathematically proven to produce the minimal average waiting time for a given set of processes?",
+    "options": [
+      "First-Come, First-Served (FCFS)",
+      "Round Robin (RR)",
+      "Shortest Job First (SJF)",
+      "Multilevel Feedback Queue"
+    ],
+    "correctAnswer": 2,
+    "marks": 2,
+    "negativeMarks": 0.5,
+    "topic": "CPU Scheduling",
+    "difficulty": "Easy",
+    "explanation": "Shortest Job First (SJF) is provably optimal because scheduling shorter tasks earlier reduces waiting times for the remaining processes maximally."
+  },
+  {
+    "id": "q7",
+    "course": "Database Management Systems",
+    "subjectCode": "CS-503",
+    "question": "Which Normal Form strictly eliminates transitive functional dependencies of non-prime attributes on candidate keys?",
+    "options": [
+      "First Normal Form (1NF)",
+      "Second Normal Form (2NF)",
+      "Third Normal Form (3NF)",
+      "Boyce-Codd Normal Form (BCNF)"
+    ],
+    "correctAnswer": 2,
+    "marks": 2,
+    "negativeMarks": 0.5,
+    "topic": "Normalization",
+    "difficulty": "Medium",
+    "explanation": "A relation is in 3NF if it is in 2NF and no non-prime attribute is transitively dependent on any candidate key."
+  },
+  {
+    "id": "q8",
+    "course": "Database Management Systems",
+    "subjectCode": "CS-503",
+    "question": "In relational database transactions, what does the 'I' in ACID properties stand for?",
+    "options": [
+      "Integrity",
+      "Isolation",
+      "Idempotency",
+      "Inheritance"
+    ],
+    "correctAnswer": 1,
+    "marks": 2,
+    "negativeMarks": 0.5,
+    "topic": "Transactions",
+    "difficulty": "Easy",
+    "explanation": "ACID stands for Atomicity, Consistency, Isolation, and Durability. Isolation ensures concurrent transactions execute without interference."
+  }
+]
+
